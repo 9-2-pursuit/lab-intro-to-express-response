@@ -2,8 +2,12 @@ const express = require("express");
 const app = express();
 
 app.get("/", (request, response) => {
-    response.send("Hello World!");
+    response.status(200).send("Hello World!");
 });
+
+// app.get("/", (request, response) => {
+//     response.status(418).send("Hello World!");
+// });
   
 app.get("/terminator", (request, response) => {
     response.send("I'll be back!!!!")
@@ -83,4 +87,6 @@ app.get("/magic8", (req, res) => {
     res.send(`<h1>${magic8Responses[(el => Math.floor(Math.random() * el))(19)]}</h1>`)
 })
   
-app.listen(3003);
+// app.listen(3003);
+
+module.exports = app
