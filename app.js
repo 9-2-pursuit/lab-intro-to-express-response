@@ -2,14 +2,14 @@
 const express = require("express");
 
 const app = express();
-const port = 3003;
+const PORT = 3003;
 
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-app.listen(port, () => {
-  console.log(`listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`listening on PORT ${PORT}`);
 });
 
 app.get("/terminator", (req, res) => {
@@ -85,3 +85,9 @@ function mag8Answ() {
 app.get("/magic8", (req, res) => {
   res.send(`<h1>${mag8Answ()}</h1>`);
 });
+
+app.get("/", (req, res) => {
+  res.status(200).send("Hello, world!");
+});
+
+module.exports = app;
