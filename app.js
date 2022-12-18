@@ -6,7 +6,7 @@ const app = express();
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Hello world");
+  res.status(200).send("Hello, world!");
 });
 
 // Activity Catchphrases Express
