@@ -72,6 +72,7 @@ app.get('/fraiser',(request, response) => {
 });
 
 app.get('/magic8',(request, response) => {
+    const random = Math.floor(Math.random()*magic8Responses.length);
     response.send(`<h1>${magic8Responses[random]}</h1>`)
 });
 
