@@ -1,0 +1,27 @@
+{
+  "name": "lab-intro-to-express-response",
+  "version": "1.0.0",
+  "description": "Lab",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9-2-pursuit/lab-intro-to-express-response.git"
+  },
+  "keywords": [
+    "N/A"
+  ],
+  "author": "James Scott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/9-2-pursuit/lab-intro-to-express-response/issues"
+  },
+  "homepage": "https://github.com/9-2-pursuit/lab-intro-to-express-response#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
